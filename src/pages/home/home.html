@@ -1,0 +1,51 @@
+<ion-header>
+<ion-navbar color="primary"><div id="navi">
+  <ion-navbar color="primary">
+  
+    <ion-title>
+      Meal Maker
+    </ion-title>
+    <!-- s<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar> -->
+    <ion-buttons end>
+      <button ion-button icon-only (click)="reset()"><ion-icon name="md-refresh"></ion-icon></button>
+    </ion-buttons>
+    
+  </ion-navbar></div></ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-slides pager paginationType="bullets" *ngIf="slideChecked" no-margin>
+   <ion-slide (click)="pushThirdPage()" *ngIf="third">
+<!--   <ion-card class="sl"> -->
+    <img src="http://assets.bonappetit.com/photos/57ad4192f1c801a1038bcafa/16:9/w_1028,c_limit/salt-and-pepper-steak.jpg">
+    <div class="card-title">Salt-And-Pepper Steak</div>
+    <!-- </ion-card> -->
+  </ion-slide>
+  <ion-slide (click)="pushFourthPage()" *ngIf="fourth">
+  <!-- <ion-card class="sl"> -->
+    <img src="http://assets.bonappetit.com/photos/57ad4b5253e63daf11a4dda1/16:9/w_1028,c_limit/grilled-steak-with-parsley-parmesan-salad.jpg"><div class="card-title">Grilled Steak with Parsley-Parmesan Salad</div>
+    <!-- </ion-card> -->
+  </ion-slide>
+  <ion-slide (click)="pushSecondPage()" *ngIf="second">
+<!--   <ion-card class="sl"> -->
+    <img src="http://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/Crispy-Fried-Chicken_exps6445_PSG143429D03_05_5b_RMS.jpg">
+    <div class="card-title">Fried Chicken</div>
+<!--     </ion-card> -->
+  </ion-slide>
+
+</ion-slides>
+<div id = "ing">
+<ion-card color="secondary">
+<ion-card-header >Ingredients</ion-card-header>
+
+	<ion-list reorder="true" (ionItemReorder)="reoderItem($event)">
+  <ion-item button *ngFor="let ing of this.picked.ingredientsMaster">
+  <ion-label>{{ing.name}}</ion-label>
+	<ion-checkbox [checked]="ing.picked" (click)="toggle(ing)">
+	</ion-checkbox>
+  </ion-item>
+  </ion-list>
+  </ion-card>
+  </div>
+</ion-content>

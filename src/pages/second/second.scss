@@ -1,0 +1,81 @@
+page-second {
+	ion-slides {
+ 	height: 40%;
+ 	width: auto;
+ 	color: #fff;
+ 	padding:0;
+ }
+ img {
+ 	// position: float;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin:0 auto;
+    height:100%;
+    width:auto;
+ }
+ // ion-card {
+ // 	left:0;
+ // 	right:0;
+ // 	margin: 0 auto;
+ // 	text-align: center;
+ // }
+  .card-title {
+    position: absolute;
+    top: 40%;
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.24), 0 5px 10px rgba(0, 0, 0, 0.48);
+  }
+  ion-slide {
+   	height: 100%;
+   	width:auto;
+	}
+	// .sl {
+	// 	margin:0 auto;
+	// 	left:0;
+	// 	right:0;
+	// 	// position: relative;
+	// }
+	#ing {
+		margin:0 auto;
+	}
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		background: #72923f;
+	}
+	.swiper-pagination-bullet {
+		background: #fff;
+		opacity: 1;
+	}
+  @media screen and (min-width: 480px) {
+   	
+   	ion-searchbar {
+   		width: 445px;
+   		margin: 0 auto;
+   	}
+		#ing {
+			width: 445px;
+			margin:0 auto;
+			
+		}
+	}
+	@media screen and (max-width: 480px) {
+		#ion-slide {
+			height: 215px;
+		}
+	}
+	@media screen and (min-height: 590px) {
+   	
+		ion-slides {
+			height: 215px;
+		}
+	}
+	@media screen and (max-height: 590px) {
+   	
+		ion-slides {
+			height: 215px;
+		}
+	}
+}

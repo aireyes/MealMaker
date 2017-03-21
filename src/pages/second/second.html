@@ -1,0 +1,69 @@
+<!--
+  Generated template for the Second page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons end>
+    	<button ion-button icon-only (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list>
+	<ion-item button *ngFor="let ingredient of this.picked.ingredients">
+	<ion-label>{{ingredient.name}}</ion-label>
+
+	<ion-checkbox [checked]="ingredient.picked" (click)="toggle(ingredient)">
+		
+	</ion-checkbox>
+	</ion-item>
+	</ion-list>
+
+</ion-content>
+ -->
+<ion-header>
+  <ion-navbar color="secondary">
+    <!-- <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar> -->
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-card id="ing">
+   <img src="http://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/Crispy-Fried-Chicken_exps6445_PSG143429D03_05_5b_RMS.jpg">
+  <ion-card-header>
+    Instruction
+  </ion-card-header>
+  <ul>
+  <li>Chicken</li>
+  <li>Salt</li>
+  <li>Flour</li>
+  <li>Black Pepper</li>
+  <li>Cayenne Pepper</li>
+  <li>Buttermilk</li>
+  <li>Vegetable Oil</li>
+  </ul>
+  <ol>
+  <li>Pat the chicken dry. Combine the salt, flour, black pepper, and cayenne in a large, shallow bowl. Dredge the chicken in the flour mixture, shaking off the excess. Set aside for about 15 minutes. Pour the buttermilk into a second shallow bowl. Dip the chicken in the buttermilk, then again in the flour mixture.</li>
+  <li>In a heavy-bottomed Dutch oven (preferably cast iron), heat about 4 inches of vegetable oil over medium heat until the temperature registers 360° F on a deep-fry thermometer.</li>
+  <li>Carefully place the chicken in the oil, using tongs. (Add the pieces slowly, so that the temperature does not drop, and work in batches to avoid overcrowding.) Fry the chicken until golden brown, turning once, 10 to 20 minutes, depending on the size of the pieces. Check for doneness by piercing the meat; the juices should run clear.</li>
+  <li>Drain the chicken on paper towels set on a wire rack. If desired, the cooked chicken can be kept warm in an oven set on low.</li>
+
+</ol>
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/o_0c0-5RFXg" frameborder="0" allowfullscreen></iframe>
+</ion-card>
+
+
+</ion-content>

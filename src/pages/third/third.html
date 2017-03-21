@@ -1,0 +1,52 @@
+<!--
+  Generated template for the Third page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>Third</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>
+ -->
+
+ <ion-header>
+  <ion-navbar color="secondary">
+    <!-- <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar> -->
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-card id="ing">
+   <img src="http://assets.bonappetit.com/photos/57ad4192f1c801a1038bcafa/16:9/w_1028,c_limit/salt-and-pepper-steak.jpg">
+  <ion-card-header>
+  Ingredients
+  </ion-card-header>
+  <ul>
+  <li>Salt</li>
+  <li>Steak</li>
+  <li>Black Pepper</li>
+  </ul>
+  <ol>
+  <li>Cut skirt steak into 4 pieces; season with salt and pepper.</li>
+  <li>Grill over medium-high heat until medium-rare, about 4 minutes per side.</li>
+  <li>Let rest 5 minutes before thinly slicing against the grain.</li>
+
+</ol>
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/QyUDstHoAw4" frameborder="0" allowfullscreen></iframe>
+</ion-card>
+
+
+</ion-content>
